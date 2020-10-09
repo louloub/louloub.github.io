@@ -1,0 +1,519 @@
+
+main {
+  min-height: 100vh;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+/* start light mode*/
+
+:root {
+  --background-color: #f8f8ff;
+  --text-color: #343333;
+}
+
+/* End light mode */
+
+/* start dark mode*/
+
+:root body.dark {
+  --background-color: #222222;
+  --text-color: #f8f8ff;
+}
+
+/* End dark mode */
+
+body {
+  background-color: var(--background-color);
+}
+
+h2 {
+  padding: 10px 0 25px 0;
+}
+
+input {
+  background-color: #ededed;
+  border: 0.7px solid grey;
+  ;
+}
+
+textarea {
+  background-color: #ededed;
+  border: 0.7px solid grey;
+  ;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: fontContent;
+  src: url("src/helveticaneue-roman.ttf");
+}
+
+h1, h1>a {
+  font-family: 'Bebas Neue', cursive;
+}
+
+a, #searchLi {
+  font-family: fontContent;
+  src: url("src/helveticaneue-roman.ttf");
+  line-height: normal;
+  font-weight: bold;
+  text-align: center;
+  color: #343333;
+}
+
+h2, h3, h4, .agenda-link, .article-link {
+  font-family: fontContent;
+  src: url("src/helveticaneue-roman.ttf");
+  line-height: normal;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+}
+
+#searchLi {
+  font-family: fontContent;
+  src: url("src/helveticaneue-roman.ttf");
+  line-height: normal;
+  font-weight: bold;
+}
+
+p {
+  font-family: "fontContent";
+  line-height: normal;
+  color: var(--text-color);
+  text-align: justify;
+}
+
+#plusDarticles{
+  text-align: center;
+}
+
+.link-agenda {
+  font-family: "fontContent";
+  padding: 0%;
+  font-weight: lighter;
+  color: var(--text-color);
+}
+
+/* End fonts */
+
+/* start Footer Lisa-Lou */
+
+a {
+  padding: 0.3rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* End Footer Lisa-Lou */
+
+/* Start Page Accueil: cards - Lisa-Lou */
+
+.articleImg {
+  max-width: 15rem;
+}
+
+.card-accueil {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 var(--box-shaddow);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+
+.card-accueil:hover {
+  box-shadow: 0 8px 16px 0 rgba(255, 206, 106, 1);
+}
+
+/* Add some padding inside the card container */
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: stretch;
+}
+
+/* End Page Accueil: cards - Lisa-Lou */
+
+/*Flav*/
+
+.buttonContactLivreOr {
+  color: #FFCE6A;
+  font-weight: bold;
+  background-color: #FF6D6A;
+  margin: 0em;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-align: right;
+  margin-left: 60%;
+}
+
+body{
+  font-family: 'Lusitana', serif;
+  font-size: 1.1rem;
+}
+
+nav {
+  padding: 1.5rem 0 0 0;
+  text-align: center;
+  background-color: #FFCE6A;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contactLayout {
+  text-align: center;
+}
+
+form {
+  padding: 20px 0;
+}
+
+.elementForm {
+  padding: 10px;
+}
+
+input {
+  width: 70%;
+  height: 25px;
+}
+
+textarea {
+  width: 70%;
+  height: 100px;
+}
+
+.elementForm p {
+  margin-bottom: 5px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+form p {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+form .button {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contactLayout p {
+  font-size: 1.1rem;
+}
+
+.nav-wrapper ul li {
+  font-size: 1.5rem;
+}
+
+#livredor {
+  text-align: center;
+}
+
+#tralala{
+  text-align: center;
+}
+
+/*Flav*/
+
+/* Start Harold */
+
+.titleAboutUs {
+  text-align: center;
+}
+
+.aboutusBloc, .us, .LisaLou, .Jessica, .Flavien, .Harold, .textContent {
+  display: flex;
+  padding: 10px 0 40px 0;
+  align-items: center;
+}
+
+.aboutusBloc {
+  flex-direction: column;
+  width: 100%;
+}
+
+.us {
+  flex-direction: column;
+  align-content: center;
+}
+
+.aboutusImg {
+  align-content: center;
+  border-radius: 50%;
+}
+
+.aboutusImg2 {
+  border-radius: 50%;
+}
+
+.textContent {
+  flex-direction: column;
+  padding: 25px;
+}
+
+.aboutUsName {
+  padding: 25px;
+  font-size: 25px;
+}
+
+.imgCarousselTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.inputInPopup{
+  padding: 16px 20px !important;
+  width: 86% !important;
+}
+
+/* End Harold */
+
+/* start Jess */
+
+/* Agenda */
+
+.container-agenda {
+  border: 1px solid grey;
+  margin: 40px;
+  box-shadow: 5px 2px 2px grey;
+}
+
+.calendar {
+  text-align: center;
+}
+
+.calendar div {
+  position: relative;
+}
+
+.calendar h2 {
+  text-transform: uppercase;
+}
+
+.calendar thead {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.calendar tbody {
+  color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+  border: 2px solid #FFCE6A;
+}
+
+.calendar td {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  width: 4em;
+  color: var(--text-color);
+}
+
+.calendar .prev-month, .calendar .next-month {
+  color: #cbd1d2;
+}
+
+.calendar .prev-month:hover, .calendar .next-month:hover {
+  border: 2px solid #cbd1d2;
+}
+
+.current-day {
+  background: #FFCE6A;
+  color: #f9f9f9;
+}
+
+.event {
+  cursor: pointer;
+  position: relative;
+}
+
+.event:after {
+  background: #FFCE6A;
+  border-radius: 50%;
+  bottom: .5em;
+  display: block;
+  content: '';
+  height: .5em;
+  left: 50%;
+  margin: -.25em 0 0 -.25em;
+  position: absolute;
+  width: .5em;
+}
+
+.event.current-day:after {
+  background: #f9f9f9;
+}
+
+.btn-prev, .btn-next {
+  border: 2px solid #cbd1d2;
+  border-radius: 50%;
+  color: #cbd1d2;
+  height: 2em;
+  font-size: .75em;
+  line-height: 2em;
+  margin: -1em;
+  position: absolute;
+  top: 50%;
+  width: 2em;
+}
+
+.btn-prev:hover, .btn-next:hover {
+  background: #cbd1d2;
+  color: #f9f9f9;
+}
+
+.btn-prev {
+  left: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-next {
+  right: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button ON/OFF start*/
+
+.onoffswitch {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 20px;
+}
+
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+  content: "Light";
+  padding-left: 10px;
+  background-color: #FFCE6A;
+  color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+  content: "Dark";
+  padding-right: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+  text-align: right;
+}
+
+.onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 55px;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+#interrupteur {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+/* Button ON/OFF end*/
+
+/* End Jess */

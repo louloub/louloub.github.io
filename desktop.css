@@ -1,0 +1,207 @@
+/*Flav*/
+
+@media screen and (min-width: 768px){
+
+#navMobile{
+    display: none;
+}
+
+nav{
+    height: auto;
+}
+
+#titleNav{
+    display: none;
+}
+
+#logoSite{
+    max-width: 70%;
+    max-height: 70%;
+    padding-bottom: 1.4rem;
+}
+
+.menu-checkbox{
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.logo{
+    display: none;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.nav-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li{
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2;
+}
+
+/*Flav*/
+
+/*Jess*/
+
+/*page d'accueil*/
+
+/* Css is same with aboutus.html */
+
+/* Page Evenements */
+
+/* div {
+    align-self: center;
+}  
+
+/* à renommer ! Influe sur les div des autres pages ! */
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    font-family: 'Lusitana', serif;
+}
+
+.darkmode {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*Jess*/
+
+/* Start Footer Lisa-Lou */
+
+@media only screen and (min-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .links-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1.5rem;
+    }
+    .links-container>a {
+        margin-right: 0.4rem;
+        margin-bottom: 0;
+    }
+    .logos-container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* End Footer Lisa-Lou */
+
+/* Start actus Lisa-Lou */
+
+figure>img {
+    width: 100%;
+}
+
+.header-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-article>h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+article>p {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.header-article>h3 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.header-article>h4 {
+    font-size: 1rem;
+    padding: 1.5rem;
+    border-bottom: solid var(--text-color);
+}
+
+figcaption {
+    font-size: 0.3rem;
+    padding-bottom: 3rem;
+}
+
+.article-layout-image-right {
+    display: flex;
+    padding: 3em;
+}
+
+.article-layout-image-right>p {
+    text-align: start;
+    text-align: justify;
+}
+
+.content-article {
+    padding: 3em;
+}
+
+.layout-article {
+    text-align: start;
+}
+
+.pic-harold {
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    align-self: center;
+}
+
+.agenda-link {
+    padding: 0%;
+}
+
+.logos-socials-article {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    ;
+    border-bottom: double var(--text-color);
+}
+
+.embed-youtube {
+    display: flex;
+    justify-content: center;
+}
+}
+/* End actus Lisa-Lou */
+

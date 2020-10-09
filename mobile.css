@@ -1,0 +1,221 @@
+/*Flav*/
+
+@media screen and (max-width: 768px) {
+
+    /* test final sprint */
+
+    .find-actu, .find-links {
+        text-align: center;
+    }
+
+    figure>img {
+        width: 100%;
+    }
+
+    .header-article>h3 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    .header-article>h4 {
+        font-size: 1rem;
+        padding: 1.5rem;
+        border-bottom: solid var(--text-color);
+    }
+    
+    figcaption {
+        font-size: 0.3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .article-layout-image-right {
+        display: flex;
+        padding: 0;
+
+    }
+
+    .agenda-link {
+        padding: 0%;
+    }
+    
+    .logos-socials-article {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+        ;
+        border-bottom: double var(--text-color);
+    }
+    
+    .embed-youtube {
+        display: flex;
+        justify-content: center;
+    }
+
+    article p {
+        text-align: justify;
+        padding: 1.5rem;
+    }
+
+    /* end test */
+
+    #navDesktop {
+        display: none;
+    }
+    .menu {
+        display: none;
+        flex-basis: 100%;
+    }
+    #logoSite {
+        display: none;
+    }
+    .menu-checkbox:checked~.menu {
+        /* le tilde= je selectionne .menu uniquement si les voisins checkbox sont au meme niveau*/
+        display: block;
+        /* je montre mon menu si les autres sont au meme niveau (si la condition est remplie: ~.menu*/
+    }
+    /* Je montre le menu si le checkbox est validé */
+    .menu-checkbox:checked~#titleNav, .menu-checkbox:checked~#searchButton {
+        display: none;
+    }
+    .menu-checkbox {
+        display: none
+    }
+    .nav-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 2rem;
+        height: 2rem;
+    }
+    li {
+        padding: 0.7rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-family: 'Bebas Neue', cursive;
+    }
+    .menu-checkbox h1 {
+        display: none;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    /* Start Harold */
+
+    /* Bloc text pass under pics on mobile */
+    .LisaLou, .Jessica, .Harold, .Flavien {
+        flex-wrap: wrap;
+    }
+
+    .aboutusImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    /* Account button */
+    .open-button-img {
+        display: block;
+        position: absolute;
+        bottom: -1.1px;
+        right: -2px;
+    }   
+
+    /* Button used to open the contact form - fixed at the bottom of the page */    
+    .open-button {
+        border-radius: 50px !important;
+        top: 90vh !important; /* vh = % de la page */
+        bottom: 23px !important;
+        height: 45px !important;
+        width: 45px !important;
+        background-color:white !important;
+        border: 0px !important; 
+    }
+
+    /* Text into button */
+    .open-button-texte {
+        display: none;  
+        width: 0px;
+        height: 0px;
+    }
+
+    /* End Harold */
+}
+
+/* Start Footer Lisa-Lou */
+
+footer {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.links-container>a {
+    margin-bottom: 0.4rem;
+}
+
+.logos-container {
+    display: flex;
+    align-items: center;
+}
+
+/* End Footer Lisa-Lou */
+
+/*Jess*/
+
+.bloc-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*Jess*/
+
+/* Start Actus Lisa-Lou */
+
+@media screen and (max-width: 768px) {
+
+    .pic-harold {
+        display: none;
+    }
+
+    .article-layout-image-right>p {
+        text-align: start;
+        text-align: justify;
+    }
+
+/* Start Page Accueil: cards - Lisa-Lou */
+
+  .us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: auto;
+  }
+
+
+  .textContent {
+    flex-direction: column;
+    padding: 25px;
+    min-width: 20rem;
+    align-items: center;
+}
+  
+  /*End Page Accueil: cards - Lisa-Lou */
+
+}
+

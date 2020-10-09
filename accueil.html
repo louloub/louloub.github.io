@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nouveautés musicales - Actualités - MyLovelyTrack</title>
+    <meta name="description"
+        content="C'est un blog sur les nouveautés musicales où on peut trouver des articles sur les artistes à la mode. Il y a par exemple l'histoire du groupe, leurs réseaux sociaux. Les rédacteurs expriment leurs émotions sur leurs découvertes" />
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="commun.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="caroussel.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="src/favicon.ico" />
+
+</head>
+
+<body>
+    <header>
+        <!--Flavien-->
+        <nav id="navDesktop">
+            <a href="accueil.html"><img src="src/lovelyTrack.png" alt="Logo et nom du site" id="logoSite"></a>
+            <div class="nav-wrapper" id="nav-wrapper">
+                <ul class="menu" id="listDer">
+                    <li id="firstLi"><a href="accueil.html">Accueil</a></li>
+                    <li><a href="actus.html">Actus</a></li>
+                    <li><a href="evenements.html">Evénements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutus.html">Qui sommes nous?</a></li>
+                    <li><a href="livreDor.html">Livre d'or</a></li>
+                    <li id="searchLi">Rechercher</li>
+                </ul>
+                <h1 id="titleNav"><a href="accueil.html">My Lovely Track</a></h1>
+            </div>
+        </nav>
+
+        <nav id="navMobile">
+            <img src="src/lovelyTrack.png" alt="Logo et nom du site" id="logoSite">
+            <div class="nav-wrapper" id="nav-wrapper">
+                <input id="menu-checkbox" type="checkbox" class="menu-checkbox" />
+                <label for="menu-checkbox" class="menu-toggle"><img src="src/burgerMenu.svg" alt="Logo menu déroulant"
+                        class="logo"></label>
+                <ul class="menu" id="listDer">
+                    <h1>My Lovely Track</h1>
+                    <li id="firstLi"><a href="accueil.html">Accueil</a></li>
+                    <li><a href="actus.html">Actus</a></li>
+                    <li><a href="evenements.html">Evénements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutus.html">Qui sommes nous?</a></li>
+                    <li><a href="livreDor.html">Livre d'or</a></li>
+                </ul>
+                <h1 id="titleNav"><a href="accueil.html">My Lovely Track</a></h1>
+                <img src="src/searchLogo.svg" alt="Logo recherche" class="logo" id="searchButton">
+            </div>
+        </nav>
+
+        <!--Flavien-->
+    </header>
+
+    <main>
+
+        <div class="onoffswitch" id="interrupteur">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0"
+                value="checked" checked onclick="switchTheme()" />
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+
+            </label>
+        </div>
+
+        <!-- Start Harold -->
+        <!-- Start caroussel -->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                    checked="checked">
+                <div class="carousel-item">
+                    <img src="src/pink.jpg" alt="Photo de Pink">
+                    <p class="imgCarousselTitle">P!NK</p>
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="src/LaPetiteFumee.jpg" alt="Photo de la P'tite Fumée">
+                    <p class="imgCarousselTitle">La P'tite fumée</p>
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="src/parcels.jpg" alt="Photo du groupe Parcel">
+                    <p class="imgCarousselTitle">Parcels</p>
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="src/ManuChao.jpg" alt="Photo de Manu Chao jouant à côté d'une femme">
+                    <p class="imgCarousselTitle">Manu Chao</p>
+                </div>
+                <label for="carousel-3" class="carousel-control prev control-4">‹</label><!-- 4 vers 3 V -->
+                <label for="carousel-2" class="carousel-control next control-1">›</label><!-- 1 vers 2 V -->
+                <label for="carousel-1" class="carousel-control prev control-2">‹</label><!-- 2 vers 1 V -->
+                <label for="carousel-3" class="carousel-control next control-2">›</label><!-- 2 vers 3 V -->
+                <label for="carousel-2" class="carousel-control prev control-3">‹</label><!-- 3 vers 2 V -->
+                <label for="carousel-4" class="carousel-control next control-3">›</label><!-- 3 vers 4 V -->
+                <ol class="carousel-indicators">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-3" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-4" class="carousel-bullet">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- End caroussel -->
+        <!-- Start popup -->
+        <button class="open-button" onclick="openForm()">
+            <img class="open-button-img" src="src/account.png" />
+            <span class="open-button-texte">Login</span>
+        </button>
+
+        <div class="form-popup" id="myForm" style="display: none;">
+            <form action="/action_page.php" class="form-container">
+                <h1 class="loginButtonText">Login</h1>
+                <label for="email"><b>Email</b></label>
+                <input class="inputInPopup" type="text" placeholder="Entrer votre Email" name="email" required>
+
+                <label for="psw"><b>Mot de passe</b></label>
+                <input class="inputInPopup" type="password" placeholder="Enter votre mot de passe" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+            </form>
+        </div>
+        <!-- End popup -->
+        <!-- End Harold -->
+
+        <!-- Start Jess -->
+        <div class="aboutusBloc">
+            <div class="us">
+
+                <a class="article-link" href="actus.html#laPtiteFumee">
+                    <div class=card-accueil>                    
+                        <div class=card-container>
+                            <div class="LisaLou">
+                                <div class="aboutusImg">
+                                    <img class="articleImg" src="src/LaPetiteFumee.jpg"
+                                    alt="Photo du groupe de la P'tite Fumée">
+                                </div>
+                                <div class="textContent">
+                                    <h3 class="aboutUsName">La P'tite Fumée & Mezerg</h3>
+                                    <p>C’est ma musique du moment! Elle déchire tout! Un petit coup de mou ou une baisse de
+                                    moral à
+                                    cause du confinement? Laisse-toi embarquer...</p>
+                                    <br/>
+                                    <br/>
+                                    <p>Lire plus...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="article-link" href="actus.html#manuCiao"> 
+                    <div class=card-accueil>
+                        <div class=card-container> 
+                            <div class="Flavien">
+                                <div class="aboutusImg">
+                                    <img class="articleImg" src="src/ManuChao.jpg"
+                                    alt="Photo de Manu Chao jouant à côté d'une femme">
+                                </div>
+                                <div class="textContent">
+                                <h3 class="aboutUsName">Manu Chao & Calypso Rose</h3>
+                                <p>Des musiques que je peux écouter en boucle, il en existe un certain nombre, celle-ci
+                                    en fait
+                                    partie. On y retrouve un des artistes Ska et Reggae...</p>
+                                <br/>
+                                <br/>
+                                <p>Lire plus...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="article-link" href="actus.html#pink">
+                    <div class=card-accueil>
+                        <div class=card-container>
+                            <div class="Jessica">
+                                <div class="aboutusImg">
+                                    <img class="articleImg" src="src/pink.jpg" alt="Photo de Pink">
+                                </div>
+                                <div class="textContent">
+                                    <h3 class="aboutUsName">P!nk</h3>
+                                    <p>Who Knew, de P!nk, mon coup de coeur depuis près de 10 ans. Une musique qui me
+                                    transporte
+                                    littéralement...</p>
+                                    <br/> 
+                                    <br/>
+                                    <p>Lire plus...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="article-link" href="actus.html#parcels">
+                    <div class=card-accueil>
+                        <div class=card-container>
+                            <div class="Harold">
+                                <div class="aboutusImg">
+                                    <img class="articleImg" src="src/parcels.jpg" alt="Photo du groupe Parcel">
+                                </div>
+                                <div class="textContent">
+                                    <h3 class="aboutUsName">Parcel</h3>
+                                    <p>Parcels c’est un groupe de 5 australiens dont les vibes très seventies rappellent les
+                                    Beatles, mais en version électro...</p>
+                                    <br />
+                                    <br/>
+                                    <p>Lire plus...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- End Jess -->
+    </main>
+
+    <!-- Start footer Lisa-Lou -->
+    <footer>
+        <div class="links-container">
+            <div class="links-container">
+                <a href="accueil.html">® MylovelyTrack</a>
+                <a href="actus.html">Conditions générales</a>
+                <a href="evenements.html">Confidentialités et cookies</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="logos-container">
+                <img alt="facebook logo" src="src/facebook-logo.png" alt="Logo Facebook" width="25" height="25" />
+                <img alt="instagram logo" src="src/instagram-logo.png" alt="Logo Instagram" width="25" height="25" />
+                <img alt="twitter logo" src="src/twitter-logo.png" alt="Logo Twitter" width="25" height="25" />
+                <img alt="soundcloud logo" src="src/soundcloud-logo.png" alt="Logo Soundcloud" width="25" height="25" />
+            </div>
+    </footer>
+    <!-- End footer Lisa-Lou -->
+
+</body>
+<script src="script.js"></script>
+
+</html>
